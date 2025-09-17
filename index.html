@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="DA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="yatzy.js" defer type="module"></script>
+    <link rel="stylesheet" href="yatzy.css" />
+  </head>
+  <body>
+    <div class="terninger">
+      <div id="t0" class="terning"><img src="Images/t1.png" /> <br /></div>
+      <div id="t1" class="terning">
+        <img src="Images/t2.png" />
+      </div>
+      <div id="t2" class="terning">
+        <img src="Images/t3.png" />
+      </div>
+      <div id="t3" class="terning">
+        <img src="Images/t4.png" />
+      </div>
+      <div id="t4" class="terning">
+        <img src="Images/t5.png" />
+      </div>
+    </div>
+    <div class="controls">
+      <input type="button" name="roll" value="Roll" id="btnRoll" />
+    <div class="rollInfo">
+      <label for="rollCount">Roll count:</label>
+      <label id="rollCount">0</label>
+    </div>
+    </div>
+    <div class="score">
+      <ul>
+        <li>1-s <input type="text" class="score1" readonly /></li>
+        <li>2-s <input type="text" class="score1" readonly /></li>
+        <li>3-s <input type="text" class="score1" readonly /></li>
+        <li>4-s <input type="text" class="score1" readonly /></li>
+        <li>5-s <input type="text" class="score1" readonly /></li>
+        <li>6-s <input type="text" class="score1" readonly /></li>
+        <li>One pair <input type="text" class="score1" readonly /></li>
+        <li>Two pair <input type="text" class="score1" readonly /></li>
+        <li>Three same <input type="text" class="score1" readonly /></li>
+        <li>Four same<input type="text" class="score1" readonly /></li>
+        <li>Full house <input type="text" class="score1" readonly /></li>
+        <li>Small straight <input type="text" class="score1" readonly /></li>
+        <li>Large straight <input type="text" class="score1" readonly /></li>
+        <li>Chance <input type="text" class="score1" readonly /></li>
+        <li>Yatzy <input type="text" class="score1" readonly /></li>
+        <li>Sum <input type="text" class="sum" readonly /></li>
+        <li>Bonus <input type="text" class="bonus" readonly /></li>
+        <li>Total <input type="text" class="total" readonly /></li>
+      </ul>
+    </div>
+  </body>
+</html>

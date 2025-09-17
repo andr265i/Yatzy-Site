@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.rollInfo{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.terninger {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.terning {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.terning img {
+  width: 60px;
+  height: 60px;
+}
+
+.terning.locked {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.terning img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+#btnRoll {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  transition: background-color 0.2s;
+  align-self: center;
+}
+
+#btnRoll:hover {
+  background-color: #45a049;
+}
+
+.score {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #4CAF50;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.score ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.score li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.score li:last-child {
+  border-bottom: none;
+}
+
+.score input {
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px;
+}
