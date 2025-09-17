@@ -1,4 +1,5 @@
-import * as logik from "../Logik/Logik.js";
+import * as logik from "./Logik/Logik.js";
+
 
 let results = logik.getResults();
 let winCount = 0;
@@ -120,3 +121,4 @@ function updateBonus() {
     bonus[0].value = 50;
   }
 }
+
